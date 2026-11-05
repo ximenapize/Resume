@@ -1,492 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ximena Pinillos Zegarra</title>
+<meta name="description" content="Politóloga de la PUCP. Trabajo con archivos y datos, y los convierto en indicadores sobre el Perú.">
+<meta property="og:title" content="Ximena Pinillos Zegarra">
+<meta property="og:description" content="Politóloga de la PUCP. Trabajo con archivos y datos, y los convierto en indicadores sobre el Perú.">
+<meta property="og:image" content="https://ximenapize.github.io/Resume/assets/img/foto.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cg fill='%2333507A'%3E%3Ccircle cx='5' cy='21' r='3'/%3E%3Ccircle cx='13' cy='21' r='3'/%3E%3Ccircle cx='21' cy='21' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3Ccircle cx='21' cy='13' r='3'/%3E%3Ccircle cx='21' cy='5' r='3'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FCFBF8; --sheet:#FFFFFF; --ink:#24252D; --ink-2:#53556A; --mute:#767887; --rule:#E8E4DC;
+  --blue:#33507A; --sage:#6F9A82; --ochre:#C99A3F; --plum:#86739F; --blue-soft:#E9EEF5;
+  --grid:rgba(51,80,122,.06);
+}
+*{box-sizing:border-box;margin:0}
+body{color:var(--ink);font:17px/1.6 "Hanken Grotesk",system-ui,sans-serif;background-color:var(--bg);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .28 0 0 0 0 .22 0 0 0 .085 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:160px 160px,28px 28px,28px 28px}
+#andes{position:fixed;left:0;right:0;bottom:0;width:100%;height:46vh;z-index:0;pointer-events:none}
+.w{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 28px 80px}
+a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}
+h2{font:400 30px/1.15 "Libre Caslon Text",serif}
+h3{font:600 18px/1.3 "Hanken Grotesk"}
+.lead{color:var(--ink-2);margin:6px 0 24px;max-width:62ch}
 
-  <title>Ximena Pinillos - Resume</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+.top{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:26px 0 0}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px 0 14px;border-radius:12px;font:600 15px "Hanken Grotesk";color:var(--ink);text-decoration:none;
+  background:linear-gradient(#FFFFFF,#F6F3EC);border:1px solid #DAD5CA;box-shadow:0 1px 0 #fff inset,0 2px 0 #E2DDD2,0 6px 14px -10px rgba(36,37,45,.4);transition:transform .15s,box-shadow .15s}
+.btn svg{width:19px;height:19px;color:var(--blue)}
+.btn:hover{transform:translateY(-1px);box-shadow:0 1px 0 #fff inset,0 3px 0 #E2DDD2,0 10px 18px -10px rgba(36,37,45,.45)}
+.btn:active{transform:translateY(1px);box-shadow:0 1px 0 #E2DDD2}
+.btn.p{background:linear-gradient(#3C5C89,#2E4A72);border-color:#284268;color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 2px 0 #22385A,0 8px 16px -10px rgba(36,50,80,.7)}
+.btn.p svg{color:#fff}
+.btn:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/touch-icon.png" rel="touch-icon">
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 290px;gap:48px;align-items:center;padding:44px 0 34px}
+h1{font:400 clamp(44px,8.6vw,104px)/.96 "Libre Caslon Text",serif;letter-spacing:-.03em}
+h1 em{font-style:italic;color:var(--blue)}
+.hero p{margin-top:26px;font-size:20px;line-height:1.55;color:var(--ink-2);max-width:37ch}
+.hero p b{color:var(--ink);font-weight:600}
+.hero p.id{font:600 19px/1.45 "Hanken Grotesk";color:var(--ink);margin-top:28px}
+.hero p.id+p{margin-top:10px}
+.cta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.cta a{font:600 15px "Hanken Grotesk";text-decoration:none;color:var(--ink);border:1px solid var(--ink);border-radius:99px;padding:9px 18px;background:var(--sheet);min-height:44px;display:inline-flex;align-items:center}
+.cta a.p{background:var(--blue);border-color:var(--blue);color:#fff}
+.portrait{position:relative;width:280px;height:280px}
+.portrait img{width:280px;height:280px;border-radius:50%;object-fit:cover;filter:saturate(.85)}
+.portrait svg{position:absolute;inset:-26px;width:332px;height:332px}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+/* menú */
+.menu{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 30px;padding:20px 0 18px;margin-top:8px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.mb{position:relative;background:none;border:0;padding:6px 2px 10px;cursor:pointer;font:400 22px/1.2 "Libre Caslon Text",serif;color:var(--ink-2);transition:color .2s,transform .12s}
+.mb::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:8px;border-radius:4px;background:var(--ochre);opacity:0;transform:scaleX(.3);transition:opacity .2s,transform .25s;z-index:-1}
+.mb:hover{color:var(--ink)}
+.mb:hover::after{opacity:.25;transform:scaleX(1)}
+.mb:active{transform:translateY(2px)}
+.mb[aria-expanded="true"]{color:var(--ink);font-style:italic}
+.mb[aria-expanded="true"]::after{opacity:.55;transform:scaleX(1)}
+.mb:focus-visible{outline:3px solid var(--ochre);outline-offset:3px;border-radius:4px}
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+/* paneles */
+.panel{display:none;margin-top:22px;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:34px 36px 36px;box-shadow:0 22px 50px -40px rgba(36,37,45,.5)}
+.panel.open{display:block;animation:in .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes in{from{opacity:0;transform:translateY(-8px)}}
+.ph{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.close{font:600 14px "Hanken Grotesk";background:none;border:0;color:var(--mute);cursor:pointer;min-height:44px}
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+/* 1 */
+.process{border:1px solid var(--rule);border-radius:8px;padding:22px 24px 16px;background:#FDFCF9}
+.process svg{display:block;width:100%;height:auto}
+.process .cap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.process .cap div{font-size:15px;color:var(--ink-2)}
+.process .cap b{display:block;font:400 20px "Libre Caslon Text";color:var(--ink)}
+.src{font-size:13px;color:var(--mute);margin-top:12px}
+.themes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.theme{border:1px solid var(--rule);border-radius:8px;padding:20px 22px}
+.theme h3{font:400 21px/1.25 "Libre Caslon Text"}
+.theme p{color:var(--ink-2);font-size:16px;margin-top:6px}
+.tags{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.tags li{font-size:13.5px;padding:3px 10px;border-radius:99px;background:var(--blue-soft);color:var(--blue)}
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.10.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+/* 2 */
+.obs{display:grid;grid-template-columns:1.05fr 1fr;background:#22324D;color:#EEF1F6;border-radius:8px;overflow:hidden}
+.obs .t{padding:28px 30px}
+.obs h3{font:400 25px/1.2 "Libre Caslon Text"}
+.obs .role{color:#E2B866;font-weight:600;font-size:15px;margin-top:6px}
+.obs p,.obs li{color:#C9D2E1;font-size:15.5px}
+.obs p{margin-top:12px}.obs ul{margin:12px 0 0;padding-left:18px}
+.obs .ol{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px}.obs .ol a{color:#fff;font-weight:600;font-size:15px}
+.obs .v{background:#2B3E5E;padding:24px 22px 16px;display:flex;flex-direction:column;justify-content:center}
+.obs .v h4{font:600 15px "Hanken Grotesk";color:#fff}.obs .v .src{color:#9FB0C9}
+
+/* pestañas internas y línea de tiempo */
+.tabs{display:flex;gap:6px;margin:16px 0 24px;border-bottom:1px solid var(--rule)}
+.tab{font:600 15.5px "Hanken Grotesk";background:none;border:0;border-bottom:3px solid transparent;color:var(--mute);padding:10px 4px;margin-right:18px;cursor:pointer;min-height:44px}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--ochre)}
+.org{display:flex;gap:16px;align-items:center}
+.org .logo{width:56px;height:56px;border-radius:8px;background:#22324D;color:#fff;display:grid;place-items:center;font:700 14px "Hanken Grotesk";letter-spacing:.02em}
+.org p{color:var(--mute);font-size:15px}
+.roles{list-style:none;margin:10px 0 28px 27px;padding:0;border-left:2px solid var(--rule)}
+.roles>li{position:relative;padding:18px 0 4px 28px}
+.roles>li::before{content:"";position:absolute;left:-8px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--sheet);border:2px solid var(--mute)}
+.roles>li.now::before{background:var(--ochre);border-color:var(--ochre)}
+.roles .d{font-size:14.5px;color:var(--mute)}
+.roles h3{font-size:18px;margin-top:2px}
+.roles .u{color:var(--blue);font-size:15.5px;font-weight:500}
+.roles p,.roles ul{color:var(--ink-2);font-size:15.5px;margin-top:6px}
+.roles ul{padding-left:18px}
+/* líneas de tiempo */
+.tl{list-style:none;padding:0;margin:8px 0 0}
+.tl li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 0;border-top:1px solid var(--rule)}
+.tl li:first-child{border-top:0}
+.tl .d{color:var(--mute);font-size:15px;padding-top:2px}
+.tl h3 span{font-weight:400;color:var(--ink-2)}
+.tl p{color:var(--ink-2);font-size:15.5px;margin-top:4px}
+.tl .badge{display:inline-block;font-size:13px;font-weight:600;color:var(--ochre);margin-top:6px}
+.sub{font:600 14px "Hanken Grotesk";color:var(--sage);margin:26px 0 2px}
+
+/* 5 */
+.pubs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pub{display:grid;grid-template-columns:110px 1fr;gap:18px;border:1px solid var(--rule);border-radius:8px;padding:18px}
+.cover{width:110px;height:148px;border-radius:2px;box-shadow:3px 4px 0 var(--rule);display:flex;flex-direction:column;justify-content:space-between;padding:11px 10px;font:400 12.5px/1.25 "Libre Caslon Text";color:#fff}
+.pub h3 a{color:inherit;text-decoration:none}
+.pub .who{font-size:14.5px;color:var(--mute);margin-top:4px}
+.pub p{font-size:15.5px;color:var(--ink-2);margin-top:8px}
+
+/* 6 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--rule);border-radius:8px;display:flex;flex-direction:column;overflow:hidden}
+.reel{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:center;border:1px solid var(--rule);border-radius:8px;padding:16px;margin-bottom:26px;background:#FDFCF9}
+.reel video{width:220px;aspect-ratio:9/16;border-radius:6px;background:#22324D;object-fit:cover}
+.reel h3{font:400 22px/1.3 "Libre Caslon Text";margin:4px 0 8px}
+.reel p{color:var(--ink-2);font-size:15.5px;margin-top:6px}
+.reel .kind{font-size:13px;font-weight:600;color:var(--sage)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filters button{font:500 15px "Hanken Grotesk";border:1px solid var(--rule);background:var(--sheet);color:var(--ink-2);border-radius:99px;padding:0 16px;min-height:40px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.card[hidden]{display:none}
+.card .fig{height:140px;border-bottom:1px solid var(--rule);background:#FDFCF9}
+.card .fig svg{width:100%;height:100%}
+.card .b{padding:15px 17px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card .kind{font-size:13px;font-weight:600;color:var(--sage)}
+.card h3{font-size:17px}
+.card .q{font:italic 15px/1.45 "Libre Caslon Text";color:var(--ink-2)}
+.card .n{font-size:15px;color:var(--ink-2)}
+.card .n b{font:400 20px/1.2 "Libre Caslon Text";color:var(--ink);display:block;margin-bottom:2px}
+.card .lk{margin-top:auto;padding-top:10px;border-top:1px dashed var(--rule);display:flex;gap:16px;font-size:14.5px;font-weight:600}
+.card .lk a{text-decoration:none}
+
+/* 7 */
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.st{border:1px solid var(--rule);border-radius:8px;padding:18px 20px}
+.st h3{display:flex;align-items:center;gap:10px}
+.st h3 i{width:12px;height:12px;border-radius:50%}
+.st p{color:var(--ink-2);font-size:15.5px;margin-top:6px}
+.meter{display:flex;gap:4px;margin-top:10px}
+.meter i{width:10px;height:10px;border-radius:50%;background:var(--rule)}
+
+/* 8 */
+.social{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.so{display:flex;align-items:center;gap:14px;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;text-decoration:none;color:var(--ink);min-height:72px;transition:background .2s}
+.so:hover{background:#FBFAF6}
+.so.soon{opacity:.7}.so.soon:hover{background:none}
+.so svg{width:34px;height:34px;flex:none}
+.so b{display:block;font-size:16px}.so small{color:var(--mute);font-size:14px}
+.pend{display:inline-block;background:#F4EFE2;color:#7A6330;font-size:12.5px;padding:1px 7px;border-radius:3px}
+
+/* 9 juego */
+.board{position:relative;width:100%;max-width:780px;aspect-ratio:780/430;margin:6px auto 0}
+.seat{position:absolute;width:8.2%;aspect-ratio:1;perspective:600px;cursor:pointer;border:0;background:none;padding:0;border-radius:50%}
+.seat .in{position:absolute;inset:0;transition:transform .45s cubic-bezier(.4,.1,.2,1);transform-style:preserve-3d}
+.seat.up .in,.seat.ok .in{transform:rotateY(180deg)}
+.seat .bk,.seat .fc{position:absolute;inset:0;border-radius:50%;backface-visibility:hidden;display:grid;place-items:center}
+.seat .bk{background:radial-gradient(circle at 35% 30%,#4A6894,var(--blue) 70%);box-shadow:0 3px 0 #22324D}
+.seat .bk span{font:400 clamp(13px,2.4vw,24px) "Libre Caslon Text";color:rgba(255,255,255,.9)}
+.seat .fc{background:#fff;transform:rotateY(180deg);box-shadow:inset 0 0 0 2px var(--rule),0 3px 0 var(--rule)}
+.seat .fc img{width:62%;height:62%}
+.seat.ok .fc{box-shadow:inset 0 0 0 3px var(--sage),0 3px 0 #C8DACE}
+.seat:hover .bk{filter:brightness(1.08)}
+.seat:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}
+.mid{position:absolute;left:50%;bottom:3%;transform:translateX(-50%);text-align:center;width:22%}
+.mid .desk{height:10px;border-radius:10px 10px 0 0;background:var(--rule);margin-bottom:8px}
+.mid b{display:block;font:400 clamp(18px,3.2vw,32px) "Libre Caslon Text"}
+.mid span{font-size:14px;color:var(--mute)}
+.gbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:12px;font-size:15.5px;color:var(--ink-2)}
+.gbar button{font:600 15px "Hanken Grotesk";background:var(--ink);color:#fff;border:0;border-radius:99px;padding:10px 20px;cursor:pointer;min-height:44px}
+
+footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media (max-width:820px){
+  .obs,.pubs,.themes,.stack{grid-template-columns:1fr}
+  .grid,.social{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .w{padding:0 16px 64px}
+  .hero{grid-template-columns:1fr;gap:18px;padding:28px 0 20px}
+  .portrait,.portrait img{width:140px;height:140px}.portrait svg{inset:-14px;width:168px;height:168px}.portrait{order:-1;margin-left:14px;margin-top:14px}
+  .hero p{font-size:18px}
+  .btn{padding:0 14px 0 11px;font-size:14.5px}
+  .menu{gap:0 22px;justify-content:flex-start}.mb{font-size:21px}
+  .panel{padding:22px 18px 24px;border-radius:8px}
+  .process{overflow-x:auto}.process svg{min-width:620px}.process .cap{grid-template-columns:1fr;gap:8px}
+  .grid,.social{grid-template-columns:1fr}
+  .reel{grid-template-columns:1fr}.reel video{width:100%;max-width:260px}
+  .tl li{grid-template-columns:1fr;gap:2px}
+  .pub{grid-template-columns:84px 1fr}.cover{width:84px;height:114px;font-size:10.5px}
+  h2{font-size:26px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
 </head>
-
 <body>
+<svg id="andes" viewBox="0 0 1600 460" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+<div class="w">
+<header class="top">
+  <a class="btn p" href="files/CV_Ximena_Pinillos_Zegarra_2026.pdf"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.5h7l4 4V17a.5.5 0 0 1-.5.5h-10A.5.5 0 0 1 5 17z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2.5V7h4M10.5 9.5v5m-2.2-2.2 2.2 2.2 2.2-2.2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>CV en PDF</span></a>
+  <a class="btn" href="mailto:ximena.pinillosz@pucp.edu.pe"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m3 5.5 7 5.5 7-5.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Correo</span></a>
+  <a class="btn" href="https://github.com/ximenapize"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5a8.5 8.5 0 0 0-2.7 16.6c.4.1.6-.2.6-.4v-1.5c-2.4.5-2.9-1-2.9-1-.4-1-1-1.3-1-1.3-.8-.5.1-.5.1-.5.9.1 1.3.9 1.3.9.8 1.3 2 1 2.5.7.1-.6.3-1 .6-1.2-1.9-.2-3.9-1-3.9-4.2 0-.9.3-1.7.9-2.3-.1-.2-.4-1.1.1-2.3 0 0 .7-.2 2.3.9a8 8 0 0 1 4.2 0c1.6-1.1 2.3-.9 2.3-.9.5 1.2.2 2.1.1 2.3.5.6.9 1.4.9 2.3 0 3.3-2 4-3.9 4.2.3.3.6.8.6 1.5v2.3c0 .2.2.5.6.4A8.5 8.5 0 0 0 10 1.5z"/></svg><span>GitHub</span></a>
+  <a class="btn" href="https://www.linkedin.com/in/ximena-pinillos-zegarra-7879b0232/"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 8.5v5.5M6 6v.01M9.5 14V8.5m0 2.5c0-1.4 1-2.5 2.3-2.5S14 9.6 14 11v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>LinkedIn</span></a>
+</header>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+<div class="hero">
+  <div>
+    <h1>Ximena<br>Pinillos <em>Zegarra</em></h1>
+    <p class="id">Politóloga de la PUCP<br>Cajamarquina</p>
+    <p>Trabajo con archivos y datos: los ordeno, los analizo con herramientas estadísticas y de inteligencia artificial, y los convierto en indicadores sobre el país.</p>
+  </div>
+  <div class="portrait"><svg viewBox="0 0 284 284" id="ring"></svg><img src="assets/img/foto.jpg" alt="Ximena Pinillos"></div>
+</div>
 
-    <nav id="navbar" class="navbar nav-menu">
+<nav class="menu" id="menu" aria-label="Secciones"></nav>
+
+<!-- 1 -->
+<section class="panel" id="soy">
+  <div class="ph"><h2>Sobre mí</h2><button class="close" type="button">Cerrar</button></div>
+  <p class="lead">Trabajo con datos que no estaban listos para usarse. Este es el recorrido de casi todo lo que hago, con un ejemplo real.</p>
+  <figure class="process">
+    <svg id="proc" viewBox="0 0 960 230" aria-label="Decretos leídos, base de datos e indicador"></svg>
+    <figcaption class="cap">
+      <div><b>Archivo</b>Cada decreto supremo sobre estados de emergencia publicado en El Peruano desde 2000.</div>
+      <div><b>Base de datos</b>1 658 disposiciones codificadas: tipo, motivo, territorio y fechas.</div>
+      <div><b>Indicador</b>Desde 2019, el Perú dicta más de cien disposiciones de emergencia al año.</div>
+    </figcaption>
+    <p class="src">Cada punto, 5 disposiciones. Fuente: Base de Estados de Emergencia en el Perú, EGPP-PUCP, versión julio 2026.</p>
+  </figure>
+  <div class="themes">
+    <div class="theme"><h3>Cómo participan las personas</h3><p>Votar, postular, protestar, organizarse. Me interesa por dónde entra la gente a la política y a la vida pública, y quiénes quedan fuera.</p><ul class="tags"><li>Elecciones</li><li>Paridad de género</li><li>Protesta social</li><li>Valores ciudadanos</li></ul></div>
+    <div class="theme"><h3>Cómo responde el Estado</h3><p>Qué hace el Estado peruano frente a sus límites y desafíos: cuándo suspende derechos, a qué territorios llega y cuánto gasta.</p><ul class="tags"><li>Estados de emergencia</li><li>Presupuesto público</li><li>Seguridad</li><li>Desastres</li></ul></div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="panel" id="trabajo">
+  <div class="ph"><h2>Trabajo</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-tab="t-egpp">EGPP-PUCP</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="t-antes">Experiencias anteriores</button>
+  </div>
+  <div class="tp" id="t-egpp">
+    <div class="org">
+      <div class="logo">EGPP</div>
+      <div><h3>Escuela de Gobierno y Políticas Públicas, PUCP</h3><p>Diciembre de 2024 – hoy. Lima.</p></div>
+    </div>
+    <ol class="roles">
+      <li class="now"><span class="d">Agosto de 2026 – hoy</span><h3>Investigadora</h3><p class="u">Área de Investigación e Incidencia y Observatorio para la Democracia y Gobernabilidad</p>
+        <ul><li>Actualización de los tableros del Observatorio.</li><li>Asistencia en las investigaciones del área.</li></ul></li>
+      <li><span class="d">Agosto de 2025 – julio de 2026</span><h3>Practicante profesional</h3>
+        <ul><li>Bases electorales de candidaturas y autoridades electas, simulaciones de escaños y seguimiento de paridad, con datos del JNE y la ONPE.</li><li>Monitoreo del Congreso con web scraping.</li><li>Apoyo en la Encuesta Mundial de Valores Perú, ola 8: prueba de preguntas, capacitación, limpieza e infografías.</li></ul></li>
+      <li><span class="d">Diciembre de 2024 – agosto de 2025</span><h3>Asistente de recojo de información</h3>
+        <ul><li>Base histórica de protestas sociales (1980–2025) a partir de diarios.</li><li>Base de estados de emergencia (2000–2025) a partir de decretos supremos.</li></ul></li>
+    </ol>
+    <div class="obs">
+    <div class="t">
+      <h3>Observatorio para la Democracia y Gobernabilidad</h3>
+      <div class="role">Área de Investigación e Incidencia, EGPP-PUCP</div>
+      <p>Producimos datos abiertos y tableros sobre la política peruana, y los contamos en infografías para redes.</p>
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li>Bases electorales de candidaturas, autoridades electas y paridad, y simulaciones de escaños</li>
+        <li>Base de Estados de Emergencia, 2000–2025</li>
+        <li>Base de protestas sociales, 1980–2025</li>
+        <li>Encuesta Mundial de Valores Perú, ola 8</li>
       </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Hi! I'm Ximena Pinillos</h1>
-      <p>I'm <span class="typed" data-typed-items="a Political Science student at PUCP"></span></p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=100078639369967" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/ximenapize" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/ximena-pinillos-zegarra-7879b0232/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
+      <div class="ol"><a href="https://democracia-gobernabilidad.pucp.edu.pe/">Ver el Observatorio</a><a href="https://www.instagram.com/egobiernopucp/">Instagram</a><a href="https://www.facebook.com/egobiernopucp">Facebook</a></div>
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About me</h2>
-          <p> Currently in my tenth semester of Political Science at PUCP, I focus on Latin American political history, social movements, human rights, and state-society relations. I’m especially interested in how the state responds to conflict and how people mobilize to demand rights. 
-            I’ve worked as a research assistant at the PUCP School of Government, supporting data collection and organization for databases on social protests and states of emergency in Peru.
-            <br>
-            Also, I'm into quantitative methods applied to social sciences. I'm currently taking Machine Learning and Python courses applied to the public administration and social studies at QLab PUCP. 
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Undergraduate political science student</h3>
-            <p class="fst-italic">
-              Currently studying the fifth year of the BSc Political Science. Top four percent of all students of the Social Sciences Faculty of the Pontifical Catholic University of Peru.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>April 18th, 2001</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://ximenapize.github.io/Resume/</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+51 976 111 117</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lima, Peru</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate student</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ximena.pinillosz@pucp.edu.pe</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Available for hire</strong> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Here are some skills that I have improved over the years.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">R Studio <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Excel <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python<i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Stata<i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Adobe Photoshop<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Adobe Illustrator<i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-        <!-- ======= Facts Section ======= -->
-        <section id="facts" class="facts">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-title">
-              <h2>Distinctions and financial aid</h2>
-            </div>
-    
-            <div class="row">
-    
-              <div class="col-lg-3 col-md-6">
-                <div class="count-box">
-                  <i class="bi bi-bar-chart-steps"></i>
-                  <p> <b> <H5> Outstanding academic performance</H5> </b> </p>
-                  <p>Top 10 at the Political Science degree. 
-                  <br>
-                  Top four percent at the Social Sciences Faculty of the PUCP.
-                  </p>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 mt-7 mt-lg-0">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <p> <b> <H5> QLAB Scholarship</H5> </b> </p>
-                  <p>Scholarship from the Artificial Intelligence and Computational Methods Laboratory in Social Sciences (QLAB) for the courses of Python fundamentals and Introduction to Machine Learning.</p>
-                </div>
-              </div>
-    
-    
-            </div>
-    
-          </div>
-        </section><!-- End Facts Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Here I'll show my education trajectory and my experience in investigation associations and international programs.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Ximena Pinillos</h4>
-              <p><em> Observant and critical student with 2+ years of experience with data processing programs. Quantitative methods enthusiast and qualitative methods advocate.
-                Political theory and latinoamerican history lover.
-              </em></p>
-              <ul>
-                <li>Rio de Janeiro 450, Jesus Maria, Lima, PE</li>
-                <li>(51) 976 111 117</li>
-                <li>ximena.pinillosz@pucp.edu.pe</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>BSc Political Science</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Pontifical Catholic University of Peru (PUCP)</em></p>
-              <p>Top 4% percent of all students of the Social Sciences Faculty.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Summer Program</h4>
-              <h5>2022</h5>
-              <p><em> Artificial Intelligence and Computational Methods Laboratory in Social Sciences (QLAB)</em></p>
-              <p>Scholarship to take the courses python fundamentals and introduction to machine learning.</p>
-            </div>
-
-            <h3 class="resume-title">Language studies</h3>
-            <div class="resume-item">
-              <h4>Advanced English (C1)</h4>
-              <h5>2021</h5>
-              <p><em>Idiomas Catolica</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Basic German (A1)</h4>
-              <h5>2022 - Present</h5>
-              <p><em> German-Peruvian Cultural Institute </em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Basic French (A2)</h4>
-              <h5>2018</h5>
-              <p><em> Language Center of Cajamarca </em></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experience</h3>
-            <div class="resume-item">
-              <h4>Director of the Image Committee</h4>
-              <h5>2020-2021</h5>
-              <p><em>Internacia, Civil Association </em></p>
-              <ul>
-                <p>Responsible for organizing and directing the production of audiovisual material for the dissemination of research articles, newsletters, 
-                  infographics, events and presentation of the association's first indexed journal. 
-                  We were able to produce audiovisual content of research and events on International Relations widely disseminated in social networks.</p>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Member of the Image Commitee</h4>
-              <h5>2019-2020</h5>
-              <p><em>Internacia, Civil Association</em></p>
-              <ul>
-                <p> Responsible for the production of audiovisual material on International Relations research and association events.</p>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Participant of the "Intercultural Dialogues" program</h4>
-              <h5>2022</h5>
-              <p><em>Yale University - Pontifical Catholic University of Peru</em></p>
-              <ul>
-                <p> The program was part of Yale University's "SPAN 150 Advanced Oral and Written Spanish Communication" course and during this time, 
-                  students from PUCP and Yale University met weekly for one hour to reflect on topics related to Hispanic American culture and language.</p>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Here are some links to the works I've made and the associations and programs I've been part of.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Revista Internacia</h4>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="All 1"><i class="bx bx-plus"></i></a>
-              <a href="https://revistas.pucp.edu.pe/index.php/internacia/issue/view/1618" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Boletines informativos - Internacia</h4>
-              <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="All 1"><i class="bx bx-plus"></i></a>
-              <a href="https://issuu.com/internacia/docs/bolet_n_1_julio__4_" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Podcast sobre RRII - Internacia</h4>
-              <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="All 1"><i class="bx bx-plus"></i></a>
-              <a href="https://open.spotify.com/show/0B1yiG4pNa0rI86Beyg55p" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>QLAB - PUCP</h4>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="All 1"><i class="bx bx-plus"></i></a>
-              <a href="https://qlab.pucp.edu.pe/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Final Project for the Statistics for political analysis 2 course (2022-1)</h4>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="All 1"><i class="bx bx-plus"></i></a>
-              <a href="https://rpubs.com/ximenapize_/923807" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        
-          
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact me!</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Rio de Janeiro 450, Jesus Maria, Lima 15072</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>ximena.pinillosz@pucp.edu.pe</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+51 976 111 117</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Ximena Pinillos</h3>
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=100078639369967" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/ximenapize" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/ximena-pinillos-zegarra-7879b0232/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    <div class="v">
+      <h4>Disposiciones de estado de emergencia según gobierno, 2000–2025</h4>
+      <svg id="gov" viewBox="0 0 440 230"></svg>
+      <p class="src">Fuente: tablero de Estados de Emergencia del Observatorio. Una disposición es una declaratoria, prórroga, modificatoria o término.</p>
     </div>
-  </footer><!-- End Footer -->
+  </div>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  <div class="tp" id="t-antes" hidden>
+    <ul class="tl">
+      <li><span class="d">Abr 2024</span><div><h3>Encuestadora <span>· Consultora Equilibrium</span></h3><p>Encuestas a población migrante venezolana para la Encuesta Anual Conjunta de Necesidades de la plataforma R4V.</p></div></li>
+      <li><span class="d">Abr – Ago 2023</span><div><h3>Asistente de investigación <span>· Instituto de Estudios Internacionales, PUCP</span></h3><p>Búsqueda, revisión y sistematización de fuentes para el libro <i>Las amenazas a la seguridad del Perú en el siglo XXI</i>.</p></div></li>
+    </ul>
+    <p class="sub">Voluntariado</p>
+    <ul class="tl">
+      <li><span class="d">Dic 2024 – Dic 2025</span><div><h3>Proyectos e investigación <span>· Centro Juvenil Futuro, INPPARES</span></h3><p>Proyectos de incidencia en salud sexual y reproductiva con jóvenes.</p></div></li>
+      <li><span class="d">Abr – Ago 2023</span><div><h3>Voluntaria <span>· IDEHPUCP</span></h3><p>Intervenciones pedagógicas sobre derechos humanos y democracia.</p></div></li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<!-- 4 -->
+<section class="panel" id="estudios">
+  <div class="ph"><h2>Formación</h2><button class="close" type="button">Cerrar</button></div>
+  <ul class="tl">
+    <li><span class="d">2026 – 2027</span><div><h3>Diplomatura en Ciencia de Datos para las Ciencias Sociales y la Gestión Pública <span>· Q-Lab PUCP</span></h3><span class="badge">En curso, con media beca</span></div></li>
+    <li><span class="d">2019 – 2025</span><div><h3>Ciencia Política y Gobierno <span>· PUCP</span></h3><p>Décimo superior durante toda la carrera.</p><span class="badge">Tercer puesto de la promoción</span></div></li>
+    <li><span class="d">Ago – Dic 2023</span><div><h3>Intercambio, Red CINDA <span>· Pontificia Universidad Católica de Chile</span></h3><p>Gobernanza global, tratados internacionales con enfoque de género y teoría política.</p></div></li>
+    <li><span class="d">Ene 2024</span><div><h3>International School «Indigenous Rights, Responsibilities and Ethics» <span>· PUCP, U. de Helsinki y U. de Lapland</span></h3><span class="badge">Becada</span></div></li>
+    <li><span class="d">Ene – Mar 2023</span><div><h3>Programa de verano: Python y Machine Learning para ciencias sociales <span>· Q-Lab PUCP</span></h3><span class="badge">Becada</span></div></li>
+  </ul>
+  <p class="sub">Vida estudiantil</p>
+  <ul class="tl">
+    <li><span class="d">Abr – Dic 2024</span><div><h3>Comisión de Publicaciones <span>· Asociación Civil POLITAI</span></h3><p>Proceso editorial de la revista indexada POLITAI.</p></div></li>
+    <li><span class="d">2019 – 2021</span><div><h3>Directora de Imagen Institucional <span>· Asociación Civil Internacia</span></h3><p>Material audiovisual, boletines y el podcast de la asociación, y la primera revista indexada.</p></div></li>
+  </ul>
+</section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- 5 -->
+<section class="panel" id="publicaciones">
+  <div class="ph"><h2>Publicaciones</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="pubs" style="margin-top:18px">
+    <div class="pub">
+      <div class="cover" style="background:#33507A"><span>La normalización de la excepción</span><svg viewBox="0 0 100 40" id="cov"></svg></div>
+      <div><h3><a href="https://democracia-gobernabilidad.pucp.edu.pe/poderes-del-estado/ejecutivo/ministerios/estados-de-emergencia/publicaciones-ee">La normalización de la excepción: estados de emergencia en el Perú (2000–2024)</a></h3>
+      <div class="who">Aragón, Cruz y Pinillos. Comentarios de Ilizarbe, Retamozo y Asencios. EGPP-PUCP, 2025.</div>
+      <p>Analiza 1 536 decretos supremos: el uso de las prórrogas, la concentración en el VRAEM y el corredor minero, y la expansión ante conflictos, desastres y criminalidad.</p>
+      <span class="badge" style="color:var(--ochre);font-weight:600;font-size:13px">Coautora y constructora de la base</span></div>
+    </div>
+    <div class="pub">
+      <div class="cover" style="background:#6E5D3A"><span>Las amenazas a la seguridad del Perú en el siglo XXI</span><span style="font-family:'Hanken Grotesk';font-size:11px;opacity:.85">IDEI-PUCP</span></div>
+      <div><h3><a href="https://idei.pucp.edu.pe/proyectos-de-investigacion/amenazas-a-la-seguridad-al-peru-trafico-ilicito-de-drogas-tala-ilegal-mineria-ilegal-trata-de-personas-y-trafico-de-personas-crimen-organizado-y-terrorismo">Las amenazas a la seguridad del Perú en el siglo XXI</a></h3>
+      <div class="who">Instituto de Estudios Internacionales, PUCP. 2023.</div>
+      <p>Narcotráfico, tala y minería ilegal, trata de personas, crimen organizado y terrorismo.</p>
+      <span class="badge" style="color:var(--ochre);font-weight:600;font-size:13px">Asistente de investigación</span></div>
+    </div>
+  </div>
+</section>
 
+<!-- 6 -->
+<section class="panel" id="portafolio">
+  <div class="ph"><h2>Portafolio</h2><button class="close" type="button">Cerrar</button></div>
+  <p class="lead">Bases de datos, tableros y herramientas que construí o en los que participé. Cada ficha dice qué pregunta responde y qué hice yo.</p>
+  <div class="reel">
+    <video controls preload="none" playsinline poster="assets/img/reel-portada.jpg" src="https://ximenapize.github.io/python-qlab/tarea_3/reel/reel.mp4" aria-label="Reel: cómo responde el Estado a la protesta"></video>
+    <div><span class="kind">Reel de 75 segundos</span><h3>¿El estado de emergencia llega antes, durante o después de la protesta?</h3><p>Un resumen en video del tablero sobre protesta social y estados de emergencia en el Perú, 2000–2025. La narración usa mi voz clonada con IA (Qwen3-TTS) a partir de una grabación mía.</p><p><a href="https://ximenapize.github.io/python-qlab/tarea_3/web/">Abrir el tablero</a></p></div>
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="gallery"></div>
+</section>
+
+<!-- 7 -->
+<section class="panel" id="stack">
+  <div class="ph"><h2>Stack</h2><button class="close" type="button">Cerrar</button></div>
+  <p class="lead">Con qué trabajo. Los puntos marcan cuánto lo uso en el día a día.</p>
+  <div class="stack">
+    <div class="st"><h3><i style="background:var(--blue)"></i>Python</h3><p>pandas y geopandas; scraping con Selenium, Playwright, BeautifulSoup y trafilatura; OCR con PaddleOCR; transcripción con faster-whisper; tableros en Streamlit.</p><div class="meter" data-v="4"></div></div>
+    <div class="st"><h3><i style="background:var(--sage)"></i>R y Quarto</h3><p>Limpieza, estadística descriptiva e inferencial, visualización y reportes con Quarto.</p><div class="meter" data-v="4"></div></div>
+    <div class="st"><h3><i style="background:var(--ochre)"></i>IA aplicada</h3><p>Clasificación de texto con LLM (Claude, Batch API), extracción estructurada desde PDF, servidores MCP y skills de Claude Code, siempre con revisión humana.</p><div class="meter" data-v="4"></div></div>
+    <div class="st"><h3><i style="background:var(--plum)"></i>Mapas</h3><p>QGIS y geopandas para coropletas por distrito con ubigeo y shapefiles del INEI; imágenes Sentinel-2.</p><div class="meter" data-v="3"></div></div>
+    <div class="st"><h3><i style="background:#9A9CA8"></i>Ofimática y diseño</h3><p>Excel, Word y PowerPoint; Photoshop, Illustrator y Canva para infografías.</p><div class="meter" data-v="3"></div></div>
+    <div class="st"><h3><i style="background:#24252D"></i>Idiomas</h3><p>Español nativo, inglés avanzado (C1) y alemán básico profesional (B1).</p><div class="meter" data-v="5"></div></div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="panel" id="redes">
+  <div class="ph"><h2>Redes</h2><button class="close" type="button">Cerrar</button></div>
+  <p class="lead">Lo que escucho, lo que veo y dónde encontrarme.</p>
+  <div class="social">
+    <div class="so soon"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="#1DB954"/><path d="M9 13c6-2 12-1.5 17 1M10 18c5-1.5 10-1 14 1M11 22.5c4-1 8-.7 11 .8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span><b>Spotify</b><small>Pronto</small></span></div>
+    <div class="so soon"><svg viewBox="0 0 34 34"><rect width="34" height="34" rx="8" fill="#14181C"/><circle cx="9" cy="17" r="5" fill="#FF8000"/><circle cx="17" cy="17" r="5" fill="#00E054"/><circle cx="25" cy="17" r="5" fill="#40BCF4"/></svg><span><b>Letterboxd</b><small>Pronto</small></span></div>
+    <a class="so" href="https://www.linkedin.com/in/ximena-pinillos-zegarra-7879b0232/"><svg viewBox="0 0 34 34"><rect width="34" height="34" rx="6" fill="#0A66C2"/><rect x="8" y="13" width="4" height="12" fill="#fff"/><circle cx="10" cy="9" r="2.3" fill="#fff"/><path d="M15 13h4v2c1-1.6 2.6-2.3 4.4-2.3 3 0 4.6 2 4.6 5.4V25h-4v-6.3c0-1.6-.6-2.6-2-2.6s-3 1-3 2.8V25h-4z" fill="#fff"/></svg><span><b>LinkedIn</b><small>Ximena Pinillos Zegarra</small></span></a>
+    <a class="so" href="https://github.com/ximenapize"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="#24252D"/><path d="M17 8a9 9 0 0 0-2.8 17.5c.4 0 .6-.2.6-.4v-1.6c-2.5.5-3-1.1-3-1.1-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.4 1 1.4 1 .8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.2-2-.2-4.1-1-4.1-4.4 0-1 .4-1.8.9-2.4-.1-.2-.4-1.1.1-2.4 0 0 .8-.2 2.5.9a8.6 8.6 0 0 1 4.5 0c1.7-1.1 2.5-.9 2.5-.9.5 1.3.2 2.2.1 2.4.6.6.9 1.4.9 2.4 0 3.5-2.1 4.2-4.1 4.4.3.3.6.8.6 1.6v2.4c0 .2.2.5.6.4A9 9 0 0 0 17 8z" fill="#fff"/></svg><span><b>GitHub</b><small>ximenapize</small></span></a>
+    <a class="so" href="mailto:ximena.pinillosz@pucp.edu.pe"><svg viewBox="0 0 34 34"><rect width="34" height="34" rx="8" fill="#33507A"/><rect x="8" y="11" width="18" height="13" rx="2" fill="none" stroke="#fff" stroke-width="2"/><path d="m8.5 12 8.5 6.5 8.5-6.5" fill="none" stroke="#fff" stroke-width="2"/></svg><span><b>Correo</b><small>ximena.pinillosz@pucp.edu.pe</small></span></a>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="panel" id="juego">
+  <div class="ph"><h2>Memoria en el hemiciclo</h2><button class="close" type="button">Cerrar</button></div>
+  <p class="lead">Al empezar verás todos los escaños destapados por unos segundos. Después se voltean: encuentra los 12 pares para llenar el hemiciclo. Ningún objeto representa a un partido.</p>
+  <div class="board" id="board"><div class="mid"><div class="desk"></div><b id="mid">24 escaños</b><span id="sub">Pulsa «Jugar»</span></div></div>
+  <div class="gbar"><span id="msg">12 pares por encontrar.</span><button id="play" type="button">Jugar</button></div>
+</section>
+
+<footer><span>Lima, 2026.</span><span>Íconos del juego: Twemoji, CC BY 4.0.</span></footer>
+</div>
+
+<script>
+const C={blue:'#33507A',sage:'#6F9A82',ochre:'#C99A3F',plum:'#86739F',ink:'#24252D',mute:'#C9C5BB',soft:'#DCD8CE'};
+const add=(s,h)=>s.insertAdjacentHTML('beforeend',h);
+const EE=[3,11,11,22,28,25,23,32,36,33,44,38,84,72,47,67,58,64,78,152,155,132,121,104,109,109];
+let seed=11;const R=()=>(seed=(seed*16807)%2147483647)/2147483647;
+
+// fondo: cordilleras abstractas de puntos
+(function(){const s=document.getElementById('andes');const layers=[[C.plum,.26,200,7,24],[C.blue,.3,270,5,20],[C.sage,.32,340,9,17],[C.ochre,.28,410,6,15]];
+ layers.forEach(([c,o,base,f,step],li)=>{const ph=R()*10;for(let x=0;x<=1600;x+=step){
+   const h=Math.max(0,Math.sin(x/1600*f+ph)*60+Math.sin(x/1600*f*2.7+ph*2)*35+Math.sin(x/1600*f*6.1)*14+70);
+   const top=base-h;for(let y=top;y<470;y+=step){const fade=1-Math.min(1,(y-top)/160);if(fade<=0)break;add(s,`<circle cx="${x+(Math.floor(y/step)%2)*step/2}" cy="${y}" r="${2.1-li*.15}" fill="${c}" opacity="${(o*fade).toFixed(3)}"/>`)}}});})();
+
+// anillo de la foto
+(function(){const s=document.getElementById('ring');const cols=[C.blue,C.sage,C.ochre,C.plum];for(let i=0;i<64;i++){const a=i/64*Math.PI*2-Math.PI/2;add(s,`<circle cx="${142+135*Math.cos(a)}" cy="${142+135*Math.sin(a)}" r="${i%8===0?4:2.6}" fill="${cols[i%4]}" opacity="${i<44?1:.25}"/>`)}})();
+
+// menú
+const SECS=[['soy','sobre mí'],['trabajo','trabajo'],['estudios','formación'],['publicaciones','publicaciones'],['portafolio','portafolio'],['stack','stack'],['redes','redes'],['juego','juego']];
+const menu=document.getElementById('menu');
+SECS.forEach(([id,t])=>add(menu,`<button class="mb" type="button" aria-expanded="false" aria-controls="${id}" data-id="${id}">${t}</button>`));
+function openSec(id,scroll){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('open',p.id===id));
+  document.querySelectorAll('.mb').forEach(b=>b.setAttribute('aria-expanded',b.dataset.id===id));
+  if(id){history.replaceState(null,'','#'+id);if(scroll){const p=document.getElementById(id);window.scrollTo({top:p.getBoundingClientRect().top+scrollY-16,behavior:'smooth'})}}
+  else history.replaceState(null,'',location.pathname)}
+menu.addEventListener('click',e=>{const b=e.target.closest('.mb');if(!b)return;openSec(b.getAttribute('aria-expanded')==='true'?null:b.dataset.id,true)});
+document.querySelectorAll('.close').forEach(b=>b.onclick=()=>{openSec(null);window.scrollTo({top:menu.getBoundingClientRect().top+scrollY-16,behavior:'smooth'})});
+const h=location.hash.slice(1);if(SECS.some(s=>s[0]===h))openSec(h,false);
+
+// proceso
+(function(){const s=document.getElementById('proc');
+ for(let k=0;k<3;k++)add(s,`<rect x="${18+k*14}" y="${24+k*12}" width="200" height="176" rx="3" fill="#FFFFFF" stroke="#E8E4DC"/>`);
+ for(let i=0;i<9;i++)add(s,`<rect x="62" y="${62+i*15}" width="${110+R()*50}" height="3" rx="1.5" fill="#E8E4DC"/>`);
+ for(let i=0;i<70;i++)add(s,`<circle cx="${54+R()*176}" cy="${54+R()*140}" r="3" fill="${[C.blue,C.sage,C.ochre,C.plum][i%4]}"/>`);
+ add(s,`<path d="M276 115h40m-8-7 8 7-8 7M596 115h40m-8-7 8 7-8 7" stroke="#767887" fill="none" stroke-width="1.5"/>`);
+ let idx=0;[[C.blue,.55],[C.sage,.2],[C.ochre,.17],[C.plum,.08]].forEach(([c,p])=>{for(let j=0;j<Math.round(p*180);j++){add(s,`<circle cx="${344+(idx%18)*12.5}" cy="${34+Math.floor(idx/18)*17}" r="3.6" fill="${c}"/>`);idx++}});
+ EE.forEach((v,i)=>{for(let k=0;k<Math.max(1,Math.round(v/5));k++)add(s,`<circle cx="${668+i*10.6}" cy="${200-k*5.2}" r="2.2" fill="${i>=19?C.ochre:C.blue}"/>`)});
+ add(s,`<text x="668" y="222" font-family="Hanken Grotesk" font-size="11" fill="#767887">2000</text><text x="925" y="222" font-family="Hanken Grotesk" font-size="11" fill="#767887" text-anchor="end">2025</text><text x="883" y="30" font-family="Libre Caslon Text" font-size="15" fill="#24252D" text-anchor="middle">155</text>`);})();
+
+// observatorio y portada
+(function(){const s=document.getElementById('gov');[['Toledo',99],['García',179],['Humala',312],['Kuczynski',113],['Vizcarra',354],['Sagasti',113],['Castillo',138],['Boluarte',317],['Jerí',18]].forEach(([n,v],i)=>{const h=v/360*170,x=12+i*47;add(s,`<rect x="${x}" y="${190-h}" width="32" height="${h}" rx="2" fill="${v>300?'#E2B866':'#7C93B8'}"/><text x="${x+16}" y="${184-h}" text-anchor="middle" font-family="Hanken Grotesk" font-size="12" font-weight="600" fill="#EEF1F6">${v}</text><text x="${x+16}" y="208" text-anchor="middle" font-family="Hanken Grotesk" font-size="10.5" fill="#C9D2E1">${n}</text>`)});add(s,`<line x1="8" x2="432" y1="190.5" y2="190.5" stroke="#9FB0C9"/>`);
+ const c=document.getElementById('cov');EE.forEach((v,i)=>{const h=v/155*34;add(c,`<rect x="${4+i*3.6}" y="${38-h}" width="2.4" height="${h}" fill="${i>=19?'#E2B866':'#C9D2E1'}"/>`)})})();
+
+// pestañas de trabajo
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===t));document.querySelectorAll('.tp').forEach(p=>p.hidden=p.id!==t.dataset.tab)});
+
+// portafolio
+const ITEMS=[
+ ['bases','f7','Base de datos','Base de Estados de Emergencia en el Perú','1 658 disposiciones, 2000–2025','Coautora: construí y actualizo la base a partir de cada decreto supremo.',[['Base','https://democracia-gobernabilidad.pucp.edu.pe/poderes-del-estado/ejecutivo/ministerios/estados-de-emergencia/base-estados-de-emergencia']]],
+ ['bases ia','f8','Pipeline con IA','Protestas de 2025 en la prensa digital','720 eventos en la base 2025','Diseñé el crawling, el scraping y la clasificación con Claude Haiku; el equipo revisó cada evento.',[['Metodología','https://github.com/ximenapize/portafolio-ximenapize/tree/main/protestas-social-2025-pipeline']]],
+ ['bases','f9','Base de datos','Bases electorales y paridad','Cámara de 130 y Senado de 60','Candidaturas, autoridades electas y simulaciones de escaños con datos del JNE y la ONPE.',[['Observatorio','https://democracia-gobernabilidad.pucp.edu.pe/participaci%C3%B3n/elecciones']]],
+ ['tableros','f1','Tablero y reel','¿Cómo responde el Estado a la protesta?','71 % de los decretos focalizados','llegó tras protestas en el mes previo.',[['Tablero','https://ximenapize.github.io/python-qlab/tarea_3/web/'],['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_3']]],
+ ['tableros','f10','Tablero del Observatorio','Estados de emergencia, 2000–2025','155 disposiciones en 2020','el año con más. Participé en la base, el tablero y el informe.',[['Tablero','https://democracia-gobernabilidad.pucp.edu.pe/poderes-del-estado/ejecutivo/ministerios/estados-de-emergencia/tablero-de-datos-ee']]],
+ ['tableros','f11','Tablero en grupo','Lluvias y estados de emergencia, 2025','50 decretos en 1 804 distritos','entre enero y mayo, cruzados con la lluvia de cada distrito.',[['Tablero','https://qlabgroup12-bega9ga4ffdhha8fjkjcbe.streamlit.app/'],['Código','https://github.com/ximenapize/qlab_group12']]],
+ ['tableros','f4','Imágenes satelitales','Incendios en Ucayali y Junín','6 961 ha quemadas en una semana','El 93 % era bosque; 10 568 casas a menos de 500 m.',[['Tablero','https://ximenapize.github.io/python-qlab/tarea_raster/docs/'],['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_raster']]],
+ ['tableros','f6','Trabajo colectivo','Monitor de incendios forestales del Perú','32 estudiantes','Mi aporte: casas expuestas con Google Open Buildings.',[['Tablero','https://alexanderquispe.github.io/incendios-peru/'],['Código','https://github.com/alexanderquispe/incendios-peru']]],
+ ['ia','f2','Servidor MCP','La Consulta Amigable del MEF, para Claude','10 de 10 cifras correctas','con el MCP; sin él, ninguna.',[['Código','https://github.com/ximenapize/mcp-amigable'],['Informe','https://github.com/ximenapize/mcp-amigable/blob/main/informe.md']]],
+ ['ia','f5','Skills de Claude Code','Tres skills que limpian la ENAHO','27,6 % de pobreza en 2024','igual que el INEI.',[['Código','https://github.com/ximenapize/enaho-skills']]],
+ ['ia','f3','OCR y transcripción','Del archivo escaneado al texto buscable','17 % de error por carácter','en documentos, frente a 36 % de Tesseract.',[['Tablero','https://transcripcion-documentos-audios-peruanos.streamlit.app/'],['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_2']]],
+ ['ia','f12','Clasificador de texto','Titulares peruanos por tema','F1 de 0,93','con BETO ajustado, frente a 0,60 sin entrenar.',[['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_1']]]
+];
+const CATS=[['todo','Todo'],['bases','Bases de datos'],['tableros','Tableros'],['ia','Herramientas con IA']];
+const fl=document.getElementById('filters'),gal=document.getElementById('gallery');
+CATS.forEach(([k,t],i)=>add(fl,`<button type="button" data-k="${k}" aria-pressed="${i===0}">${t}</button>`));
+ITEMS.forEach(([cat,fig,kind,t,n,d,lks])=>add(gal,`<article class="card" data-cat="${cat}"><div class="fig"><svg id="${fig}" viewBox="0 0 320 150" aria-hidden="true"></svg></div><div class="b"><span class="kind">${kind}</span><h3>${t}</h3><p class="n"><b>${n}</b>${d}</p><div class="lk">${lks.map(([a,h])=>`<a href="${h}">${a}</a>`).join('')}</div></div></article>`));
+fl.onclick=e=>{const b=e.target.closest('button');if(!b)return;fl.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));gal.querySelectorAll('.card').forEach(c=>c.hidden=!(b.dataset.k==='todo'||c.dataset.cat.split(' ').includes(b.dataset.k)))};
+
+// fichas
+(function(){
+ const s1=document.getElementById('f1');[['Pacífica',39.3,C.sage],['Disruptiva',47.5,C.blue],['Confrontación',8.1,C.ochre],['Heridos',3.8,C.plum],['Muertos',1.3,C.ink]].forEach(([n,v,c],i)=>{const h=Math.max(3,v*2.2),x=26+i*56;add(s1,`<rect x="${x}" y="${128-h}" width="40" height="${h}" rx="2" fill="${c}"/><text x="${x+20}" y="${122-h}" text-anchor="middle" font-family="Hanken Grotesk" font-size="12" font-weight="600" fill="#24252D">${String(v).replace('.',',')}</text><text x="${x+20}" y="143" text-anchor="middle" font-family="Hanken Grotesk" font-size="9" fill="#767887">${n}</text>`)});
+ const s2=document.getElementById('f2');[['Sin herramientas',0,0],['Búsqueda web',0,1],['Con el MCP',10,0]].forEach(([n,ok,bad],r)=>{add(s2,`<text x="20" y="${42+r*40}" font-family="Hanken Grotesk" font-size="12" fill="#53556A">${n}</text>`);for(let k=0;k<10;k++)add(s2,`<circle cx="${138+k*16}" cy="${38+r*40}" r="6" fill="${k<ok?C.sage:(k<bad?'#B5534A':C.soft)}"/>`)});
+ const s3=document.getElementById('f3');add(s3,`<rect x="22" y="16" width="130" height="122" rx="2" fill="#F1EADB" stroke="#E8E4DC"/><rect x="168" y="16" width="130" height="122" rx="2" fill="#fff" stroke="#E8E4DC"/><text x="30" y="34" font-family="Libre Caslon Text" font-size="11" fill="#53556A">EL COMERCIO, 1839</text><text x="176" y="34" font-family="Hanken Grotesk" font-size="11" fill="#53556A">texto reconocido</text>`);for(let i=0;i<8;i++){const w=60+R()*50;add(s3,`<rect x="30" y="${46+i*11}" width="${w}" height="3.5" fill="#B9AD95"/><rect x="176" y="${46+i*11}" width="${w}" height="3.5" fill="#C9C5BB"/>`);if(i%3===1)add(s3,`<rect x="${176+R()*w*.7}" y="${44+i*11}" width="10" height="7.5" fill="#E2B866"/>`)}
+ const s4=document.getElementById('f4');for(let i=0;i<100;i++)add(s4,`<rect x="${92+(i%10)*13.5}" y="${10+Math.floor(i/10)*13.2}" width="11" height="11" rx="2" fill="${i<93?C.sage:(i<99?C.ochre:C.plum)}"/>`);add(s4,`<text x="14" y="70" font-family="Hanken Grotesk" font-size="12" fill="#53556A">bosque</text><circle cx="18" cy="84" r="4" fill="${C.sage}"/><text x="236" y="70" font-family="Hanken Grotesk" font-size="12" fill="#53556A">pastizal</text><circle cx="240" cy="84" r="4" fill="${C.ochre}"/>`);
+ const s5=document.getElementById('f5');for(let i=0;i<100;i++)add(s5,`<circle cx="${100+(i%10)*13.5}" cy="${16+Math.floor(i/10)*13}" r="5" fill="${i<28?C.blue:C.soft}"/>`);add(s5,`<text x="16" y="72" font-family="Hanken Grotesk" font-size="12" fill="#53556A">de cada 100</text><text x="16" y="88" font-family="Hanken Grotesk" font-size="12" fill="#53556A">personas</text>`);
+ const s6=document.getElementById('f6');for(let i=0;i<32;i++)add(s6,`<circle cx="${40+(i%8)*32}" cy="${28+Math.floor(i/8)*30}" r="9" fill="${i===31?C.ochre:C.mute}"/>`);add(s6,`<text x="246" y="146" font-family="Hanken Grotesk" font-size="11" fill="#53556A">yo</text>`);
+ const s7=document.getElementById('f7');EE.forEach((v,i)=>{for(let k=0;k<Math.max(1,Math.round(v/6));k++)add(s7,`<circle cx="${30+i*10.4}" cy="${132-k*4.4}" r="1.9" fill="${i>=19?C.ochre:C.blue}"/>`)});
+ const s8=document.getElementById('f8');[[595,'595 artículos'],[493,'493 con texto'],[488,'488 de protesta'],[720,'720 eventos']].forEach(([n,t],i)=>{const w=n/720*240;add(s8,`<rect x="40" y="${16+i*30}" width="${w}" height="22" rx="2" fill="${C.blue}" opacity="${.35+i*.2}"/><text x="48" y="${31+i*30}" font-family="Hanken Grotesk" font-size="12" fill="${i>1?'#fff':'#24252D'}">${t}</text>`)});
+ const s9=document.getElementById('f9');[[130,[[50,10],[72,14],[94,18],[116,22],[138,26],[160,40]],86],[60,[[30,10],[48,14],[66,16],[84,20]],240]].forEach(([tot,rows,cx])=>{let c=0;rows.forEach(([r,n])=>{for(let k=0;k<n&&c<tot;k++,c++){const a=Math.PI-Math.PI*k/(n-1);add(s9,`<circle cx="${cx+r*.5*Math.cos(a)}" cy="${118-r*.5*Math.sin(a)}" r="2.3" fill="${cx<150?C.sage:C.plum}"/>`)}})});add(s9,`<text x="86" y="140" text-anchor="middle" font-family="Hanken Grotesk" font-size="11" fill="#53556A">Diputados</text><text x="240" y="140" text-anchor="middle" font-family="Hanken Grotesk" font-size="11" fill="#53556A">Senado</text>`);
+ const s10=document.getElementById('f10');let px='';EE.forEach((v,i)=>{const x=24+i*11.2,y=128-v/160*104;px+=(i?'L':'M')+x+' '+y;add(s10,`<circle cx="${x}" cy="${y}" r="2.6" fill="${C.ochre}"/>`)});add(s10,`<path d="${px}" fill="none" stroke="${C.ochre}" stroke-width="1.5"/><line x1="20" x2="310" y1="130" y2="130" stroke="#C9C5BB"/>`);
+ const s11=document.getElementById('f11');for(let i=0;i<50;i++)add(s11,`<rect x="${48+(i%10)*23}" y="${18+Math.floor(i/10)*23}" width="17" height="17" rx="3" fill="${C.blue}" opacity=".85"/>`);add(s11,`<text x="48" y="140" font-family="Hanken Grotesk" font-size="11" fill="#53556A">cada cuadro, un decreto</text>`);
+ const s12=document.getElementById('f12');[['Zero-shot',.60,C.soft],['LLM local',.93,C.plum],['BETO ajustado',.93,C.sage]].forEach(([n,v,c],i)=>{add(s12,`<text x="20" y="${40+i*38}" font-family="Hanken Grotesk" font-size="12" fill="#53556A">${n}</text><rect x="118" y="${28+i*38}" width="${v*165}" height="18" rx="2" fill="${c}"/><text x="${124+v*165}" y="${41+i*38}" font-family="Hanken Grotesk" font-size="12" font-weight="600" fill="#24252D">${String(v.toFixed(2)).replace('.',',')}</text>`)});
+ document.querySelectorAll('.meter').forEach(m=>{for(let i=0;i<5;i++)add(m,`<i style="${i<+m.dataset.v?'background:var(--blue)':''}"></i>`)});
+})();
+
+// juego: hemiciclo de 24 escaños redondos
+(function(){
+ const base='assets/juego/';
+ const P=[['1f5f3','Urna'],['1faaa','DNI'],['261d','Dedo entintado'],['1f4dd','Cédula'],['1f3db','Congreso'],['2696','Balanza'],['1f4e3','Megáfono'],['1f4f0','Periódico'],['1f4ca','Gráfico'],['1f50d','Lupa'],['1f399','Micrófono'],['1f1f5-1f1ea','Bandera del Perú']];
+ P.forEach(([c])=>{const i=new Image();i.src=base+c+'.svg'});
+ const board=document.getElementById('board'),msg=document.getElementById('msg'),mid=document.getElementById('mid'),sub=document.getElementById('sub'),btn=document.getElementById('play');
+ const W=780,H=430,cx=390,cy=392,pos=[];
+ [[118,4],[226,8],[334,12]].forEach(([r,n])=>{for(let k=0;k<n;k++){const a=Math.PI-(Math.PI*k/(n-1));pos.push({x:(cx+r*Math.cos(a))/W,y:(cy-r*Math.sin(a))/H})}});
+ const sz=8.2, szh=sz*W/H;
+ let seats=[],open=[],pairs=0,moves=0,lock=true,timers=[];
+ function build(){board.querySelectorAll('.seat').forEach(t=>t.remove());timers.forEach(clearTimeout);timers=[];open=[];pairs=0;moves=0;
+  const deck=[...P,...P].sort(()=>Math.random()-.5);
+  seats=deck.map((p,i)=>{const b=document.createElement('button');b.className='seat';b.type='button';b.setAttribute('aria-label','Escaño '+(i+1));
+   b.style.left=`calc(${pos[i].x*100}% - ${sz/2}%)`;b.style.top=`calc(${pos[i].y*100}% - ${szh/2}%)`;
+   b.innerHTML=`<span class="in"><span class="bk"><span>?</span></span><span class="fc"><img src="${base+p[0]}.svg" alt="${p[1]}"></span></span>`;
+   b.onclick=()=>flip(b,p);board.appendChild(b);return b})}
+ function flip(b,p){if(lock||b.classList.contains('up')||b.classList.contains('ok'))return;b.classList.add('up');b.setAttribute('aria-label',p[1]);open.push([b,p]);
+  if(open.length===2){moves++;const [[b1,p1],[b2,p2]]=open;
+   if(p1[0]===p2[0]){b1.classList.add('ok');b2.classList.add('ok');pairs++;open=[];upd(p1[1])}
+   else{lock=true;timers.push(setTimeout(()=>{[b1,b2].forEach(x=>{x.classList.remove('up');x.setAttribute('aria-label','Escaño')});open=[];lock=false;upd()},850))}}}
+ function upd(found){mid.textContent=`${pairs*2} de 24`;sub.textContent=`${moves} jugadas`;msg.textContent=pairs===12?`¡Hemiciclo completo en ${moves} jugadas!`:(found?`Encontraste: ${found}. Faltan ${12-pairs} pares.`:`Faltan ${12-pairs} pares.`)}
+ function start(){build();lock=true;seats.forEach(t=>t.classList.add('up'));let n=4;mid.textContent='Memoriza';sub.textContent=n+' s';msg.textContent='Mira bien dónde está cada escaño.';
+  const tick=()=>{n--;if(n>0){sub.textContent=n+' s';timers.push(setTimeout(tick,1000))}else{seats.forEach(t=>t.classList.remove('up'));lock=false;mid.textContent='0 de 24';sub.textContent='0 jugadas';msg.textContent='Faltan 12 pares.'}};
+  timers.push(setTimeout(tick,1000));btn.textContent='Volver a empezar'}
+ build();btn.onclick=start;
+})();
+</script>
 </body>
-
 </html>
