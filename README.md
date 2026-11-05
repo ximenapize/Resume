@@ -1,6 +1,6 @@
 # Ximena Pinillos Zegarra
 
-Portafolio personal: https://ximenapize.github.io/Resume/
+Portafolio personal: https://ximenapize.github.io/
 
 Politóloga de la PUCP. Trabajo con archivos y datos, y los convierto en indicadores sobre el Perú.
 
