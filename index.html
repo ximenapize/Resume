@@ -79,7 +79,8 @@ h1 em{font-style:italic;color:var(--blue)}
 .process .cap div{font-size:15px;color:var(--ink-2)}
 .process .cap b{display:block;font:400 20px "Libre Caslon Text";color:var(--ink)}
 .src{font-size:13px;color:var(--mute);margin-top:12px}
-.themes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.themes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:4px}
+h3.sec{font:400 24px/1.2 "Libre Caslon Text";margin-top:38px}
 .theme{border:1px solid var(--rule);border-radius:8px;padding:20px 22px}
 .theme h3{font:400 21px/1.25 "Libre Caslon Text"}
 .theme p{color:var(--ink-2);font-size:16px;margin-top:6px}
@@ -230,7 +231,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
   <div>
     <h1>Ximena<br>Pinillos <em>Zegarra</em></h1>
     <p class="id">Politóloga de la PUCP<br>Cajamarquina</p>
-    <p>Trabajo con archivos y datos: los ordeno, los analizo con herramientas estadísticas y de inteligencia artificial, y los convierto en indicadores sobre el país.</p>
+    <p>Trabajo con metodologías mixtas y construyo indicadores sobre políticas públicas y sobre la gestión de los poderes Ejecutivo y Legislativo en el Perú, para la investigación y la incidencia.</p>
   </div>
   <div class="portrait"><svg viewBox="0 0 284 284" id="ring"></svg><img src="assets/img/foto.jpg" alt="Ximena Pinillos"></div>
 </div>
@@ -240,20 +241,24 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 <!-- 1 -->
 <section class="panel" id="soy">
   <div class="ph"><h2>Sobre mí</h2><button class="close" type="button">Cerrar</button></div>
-  <p class="lead">Trabajo con datos que no estaban listos para usarse. Este es el recorrido de casi todo lo que hago, con un ejemplo real.</p>
+  <p class="lead">Me interesa cómo participan las personas en la política y en la sociedad, y cómo el Ejecutivo y el Congreso responden a esa participación.</p>
+  <div class="themes">
+    <div class="theme"><h3>Participación política</h3><p>Quiénes postulan, quiénes llegan a los cargos y cuántas mujeres lo logran.</p><ul class="tags"><li>Representación</li><li>Partidos</li><li>Paridad de género</li></ul></div>
+    <div class="theme"><h3>Participación social</h3><p>Cómo se organiza la gente fuera de las urnas: protestas, movimientos y organizaciones de la sociedad civil.</p><ul class="tags"><li>Protesta social</li><li>Movimientos sociales</li><li>Sociedad civil</li></ul></div>
+    <div class="theme"><h3>Elecciones</h3><p>Candidaturas, resultados y reglas: cómo se reparten los escaños en un Congreso que vuelve a tener dos cámaras.</p><ul class="tags"><li>Sistema electoral</li><li>Escaños</li><li>Bicameralidad</li></ul></div>
+    <div class="theme"><h3>Poderes del Estado</h3><p>Cómo gestionan el Ejecutivo y el Legislativo: estados de emergencia, desempeño congresal y políticas públicas.</p><ul class="tags"><li>Ejecutivo</li><li>Congreso</li><li>Estados de emergencia</li></ul></div>
+  </div>
+  <h3 class="sec">Metodología de trabajo</h3>
+  <p class="lead">Combino métodos cualitativos y cuantitativos. Parto de fuentes documentales, construyo bases de datos y de ellas obtengo indicadores. Un ejemplo con la base de estados de emergencia:</p>
   <figure class="process">
     <svg id="proc" viewBox="0 0 960 230" aria-label="Decretos leídos, base de datos e indicador"></svg>
     <figcaption class="cap">
-      <div><b>Archivo</b>Cada decreto supremo sobre estados de emergencia publicado en El Peruano desde 2000.</div>
-      <div><b>Base de datos</b>1 658 disposiciones codificadas: tipo, motivo, territorio y fechas.</div>
+      <div><b>Fuentes</b>Cada decreto supremo sobre estados de emergencia publicado en El Peruano desde 2000.</div>
+      <div><b>Base de datos</b>1 658 disposiciones codificadas por tipo, motivo, territorio y fechas.</div>
       <div><b>Indicador</b>Desde 2019, el Perú dicta más de cien disposiciones de emergencia al año.</div>
     </figcaption>
     <p class="src">Cada punto, 5 disposiciones. Fuente: Base de Estados de Emergencia en el Perú, EGPP-PUCP, versión julio 2026.</p>
   </figure>
-  <div class="themes">
-    <div class="theme"><h3>Cómo participan las personas</h3><p>Votar, postular, protestar, organizarse. Me interesa por dónde entra la gente a la política y a la vida pública, y quiénes quedan fuera.</p><ul class="tags"><li>Elecciones</li><li>Paridad de género</li><li>Protesta social</li><li>Valores ciudadanos</li></ul></div>
-    <div class="theme"><h3>Cómo responde el Estado</h3><p>Qué hace el Estado peruano frente a sus límites y desafíos: cuándo suspende derechos, a qué territorios llega y cuánto gasta.</p><ul class="tags"><li>Estados de emergencia</li><li>Presupuesto público</li><li>Seguridad</li><li>Desastres</li></ul></div>
-  </div>
 </section>
 
 <!-- 2 -->
@@ -270,7 +275,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
     </div>
     <ol class="roles">
       <li class="now"><span class="d">Agosto de 2026 – hoy</span><h3>Investigadora</h3><p class="u">Área de Investigación e Incidencia y Observatorio para la Democracia y Gobernabilidad</p>
-        <ul><li>Actualización de los tableros del Observatorio.</li><li>Asistencia en las investigaciones del área.</li></ul></li>
+        <ul><li>Gestión de información del Observatorio.</li><li>Asistencia en las investigaciones de la Escuela de Gobierno.</li><li>Investigaciones en materia electoral y parlamentaria.</li></ul></li>
       <li><span class="d">Agosto de 2025 – julio de 2026</span><h3>Practicante profesional</h3>
         <ul><li>Bases electorales de candidaturas y autoridades electas, simulaciones de escaños y seguimiento de paridad, con datos del JNE y la ONPE.</li><li>Monitoreo del Congreso con web scraping.</li><li>Apoyo en la Encuesta Mundial de Valores Perú, ola 8: prueba de preguntas, capacitación, limpieza e infografías.</li></ul></li>
       <li><span class="d">Diciembre de 2024 – agosto de 2025</span><h3>Asistente de recojo de información</h3>
@@ -366,8 +371,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
   <p class="lead">Con qué trabajo. Los puntos marcan cuánto lo uso en el día a día.</p>
   <div class="stack">
     <div class="st"><h3><i style="background:var(--blue)"></i>Python</h3><p>pandas y geopandas; scraping con Selenium, Playwright, BeautifulSoup y trafilatura; OCR con PaddleOCR; transcripción con faster-whisper; tableros en Streamlit.</p><div class="meter" data-v="4"></div></div>
-    <div class="st"><h3><i style="background:var(--sage)"></i>R y Quarto</h3><p>Limpieza, estadística descriptiva e inferencial, visualización y reportes con Quarto.</p><div class="meter" data-v="4"></div></div>
-    <div class="st"><h3><i style="background:var(--ochre)"></i>IA aplicada</h3><p>Clasificación de texto con LLM (Claude, Batch API), extracción estructurada desde PDF, servidores MCP y skills de Claude Code, siempre con revisión humana.</p><div class="meter" data-v="4"></div></div>
+    <div class="st"><h3><i style="background:var(--sage)"></i>R, Shiny y SPSS</h3><p>Limpieza de datos, estadística descriptiva e inferencial y visualización en R; aplicaciones en Shiny, reportes con Quarto y análisis en SPSS.</p><div class="meter" data-v="4"></div></div>
     <div class="st"><h3><i style="background:var(--plum)"></i>Mapas</h3><p>QGIS y geopandas para coropletas por distrito con ubigeo y shapefiles del INEI; imágenes Sentinel-2.</p><div class="meter" data-v="3"></div></div>
     <div class="st"><h3><i style="background:#9A9CA8"></i>Ofimática y diseño</h3><p>Excel, Word y PowerPoint; Photoshop, Illustrator y Canva para infografías.</p><div class="meter" data-v="3"></div></div>
     <div class="st"><h3><i style="background:#24252D"></i>Idiomas</h3><p>Español nativo, inglés avanzado (C1) y alemán básico profesional (B1).</p><div class="meter" data-v="5"></div></div>
@@ -450,12 +454,8 @@ const ITEMS=[
  ['tableros','f1','Tablero y reel','¿Cómo responde el Estado a la protesta?','71 % de los decretos focalizados','llegó tras protestas en el mes previo.',[['Tablero','https://ximenapize.github.io/python-qlab/tarea_3/web/'],['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_3']]],
  ['tableros','f10','Tablero del Observatorio','Estados de emergencia, 2000–2025','155 disposiciones en 2020','el año con más. Participé en la base, el tablero y el informe.',[['Tablero','https://democracia-gobernabilidad.pucp.edu.pe/poderes-del-estado/ejecutivo/ministerios/estados-de-emergencia/tablero-de-datos-ee']]],
  ['tableros','f11','Tablero en grupo','Lluvias y estados de emergencia, 2025','50 decretos en 1 804 distritos','entre enero y mayo, cruzados con la lluvia de cada distrito.',[['Tablero','https://qlabgroup12-bega9ga4ffdhha8fjkjcbe.streamlit.app/'],['Código','https://github.com/ximenapize/qlab_group12']]],
- ['tableros','f4','Imágenes satelitales','Incendios en Ucayali y Junín','6 961 ha quemadas en una semana','El 93 % era bosque; 10 568 casas a menos de 500 m.',[['Tablero','https://ximenapize.github.io/python-qlab/tarea_raster/docs/'],['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_raster']]],
- ['tableros','f6','Trabajo colectivo','Monitor de incendios forestales del Perú','32 estudiantes','Mi aporte: casas expuestas con Google Open Buildings.',[['Tablero','https://alexanderquispe.github.io/incendios-peru/'],['Código','https://github.com/alexanderquispe/incendios-peru']]],
  ['ia','f2','Servidor MCP','La Consulta Amigable del MEF, para Claude','10 de 10 cifras correctas','con el MCP; sin él, ninguna.',[['Código','https://github.com/ximenapize/mcp-amigable'],['Informe','https://github.com/ximenapize/mcp-amigable/blob/main/informe.md']]],
- ['ia','f5','Skills de Claude Code','Tres skills que limpian la ENAHO','27,6 % de pobreza en 2024','igual que el INEI.',[['Código','https://github.com/ximenapize/enaho-skills']]],
- ['ia','f3','OCR y transcripción','Del archivo escaneado al texto buscable','17 % de error por carácter','en documentos, frente a 36 % de Tesseract.',[['Tablero','https://transcripcion-documentos-audios-peruanos.streamlit.app/'],['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_2']]],
- ['ia','f12','Clasificador de texto','Titulares peruanos por tema','F1 de 0,93','con BETO ajustado, frente a 0,60 sin entrenar.',[['Código','https://github.com/ximenapize/python-qlab/tree/main/tarea_1']]]
+ ['ia','f5','Skills de Claude Code','Tres skills que limpian la ENAHO','27,6 % de pobreza en 2024','igual que el INEI.',[['Código','https://github.com/ximenapize/enaho-skills']]]
 ];
 const CATS=[['todo','Todo'],['bases','Bases de datos'],['tableros','Tableros'],['ia','Herramientas con IA']];
 const fl=document.getElementById('filters'),gal=document.getElementById('gallery');
@@ -467,16 +467,12 @@ fl.onclick=e=>{const b=e.target.closest('button');if(!b)return;fl.querySelectorA
 (function(){
  const s1=document.getElementById('f1');[['Pacífica',39.3,C.sage],['Disruptiva',47.5,C.blue],['Confrontación',8.1,C.ochre],['Heridos',3.8,C.plum],['Muertos',1.3,C.ink]].forEach(([n,v,c],i)=>{const h=Math.max(3,v*2.2),x=26+i*56;add(s1,`<rect x="${x}" y="${128-h}" width="40" height="${h}" rx="2" fill="${c}"/><text x="${x+20}" y="${122-h}" text-anchor="middle" font-family="Hanken Grotesk" font-size="12" font-weight="600" fill="#24252D">${String(v).replace('.',',')}</text><text x="${x+20}" y="143" text-anchor="middle" font-family="Hanken Grotesk" font-size="9" fill="#767887">${n}</text>`)});
  const s2=document.getElementById('f2');[['Sin herramientas',0,0],['Búsqueda web',0,1],['Con el MCP',10,0]].forEach(([n,ok,bad],r)=>{add(s2,`<text x="20" y="${42+r*40}" font-family="Hanken Grotesk" font-size="12" fill="#53556A">${n}</text>`);for(let k=0;k<10;k++)add(s2,`<circle cx="${138+k*16}" cy="${38+r*40}" r="6" fill="${k<ok?C.sage:(k<bad?'#B5534A':C.soft)}"/>`)});
- const s3=document.getElementById('f3');add(s3,`<rect x="22" y="16" width="130" height="122" rx="2" fill="#F1EADB" stroke="#E8E4DC"/><rect x="168" y="16" width="130" height="122" rx="2" fill="#fff" stroke="#E8E4DC"/><text x="30" y="34" font-family="Libre Caslon Text" font-size="11" fill="#53556A">EL COMERCIO, 1839</text><text x="176" y="34" font-family="Hanken Grotesk" font-size="11" fill="#53556A">texto reconocido</text>`);for(let i=0;i<8;i++){const w=60+R()*50;add(s3,`<rect x="30" y="${46+i*11}" width="${w}" height="3.5" fill="#B9AD95"/><rect x="176" y="${46+i*11}" width="${w}" height="3.5" fill="#C9C5BB"/>`);if(i%3===1)add(s3,`<rect x="${176+R()*w*.7}" y="${44+i*11}" width="10" height="7.5" fill="#E2B866"/>`)}
- const s4=document.getElementById('f4');for(let i=0;i<100;i++)add(s4,`<rect x="${92+(i%10)*13.5}" y="${10+Math.floor(i/10)*13.2}" width="11" height="11" rx="2" fill="${i<93?C.sage:(i<99?C.ochre:C.plum)}"/>`);add(s4,`<text x="14" y="70" font-family="Hanken Grotesk" font-size="12" fill="#53556A">bosque</text><circle cx="18" cy="84" r="4" fill="${C.sage}"/><text x="236" y="70" font-family="Hanken Grotesk" font-size="12" fill="#53556A">pastizal</text><circle cx="240" cy="84" r="4" fill="${C.ochre}"/>`);
  const s5=document.getElementById('f5');for(let i=0;i<100;i++)add(s5,`<circle cx="${100+(i%10)*13.5}" cy="${16+Math.floor(i/10)*13}" r="5" fill="${i<28?C.blue:C.soft}"/>`);add(s5,`<text x="16" y="72" font-family="Hanken Grotesk" font-size="12" fill="#53556A">de cada 100</text><text x="16" y="88" font-family="Hanken Grotesk" font-size="12" fill="#53556A">personas</text>`);
- const s6=document.getElementById('f6');for(let i=0;i<32;i++)add(s6,`<circle cx="${40+(i%8)*32}" cy="${28+Math.floor(i/8)*30}" r="9" fill="${i===31?C.ochre:C.mute}"/>`);add(s6,`<text x="246" y="146" font-family="Hanken Grotesk" font-size="11" fill="#53556A">yo</text>`);
  const s7=document.getElementById('f7');EE.forEach((v,i)=>{for(let k=0;k<Math.max(1,Math.round(v/6));k++)add(s7,`<circle cx="${30+i*10.4}" cy="${132-k*4.4}" r="1.9" fill="${i>=19?C.ochre:C.blue}"/>`)});
  const s8=document.getElementById('f8');[[595,'595 artículos'],[493,'493 con texto'],[488,'488 de protesta'],[720,'720 eventos']].forEach(([n,t],i)=>{const w=n/720*240;add(s8,`<rect x="40" y="${16+i*30}" width="${w}" height="22" rx="2" fill="${C.blue}" opacity="${.35+i*.2}"/><text x="48" y="${31+i*30}" font-family="Hanken Grotesk" font-size="12" fill="${i>1?'#fff':'#24252D'}">${t}</text>`)});
  const s9=document.getElementById('f9');[[130,[[50,10],[72,14],[94,18],[116,22],[138,26],[160,40]],86],[60,[[30,10],[48,14],[66,16],[84,20]],240]].forEach(([tot,rows,cx])=>{let c=0;rows.forEach(([r,n])=>{for(let k=0;k<n&&c<tot;k++,c++){const a=Math.PI-Math.PI*k/(n-1);add(s9,`<circle cx="${cx+r*.5*Math.cos(a)}" cy="${118-r*.5*Math.sin(a)}" r="2.3" fill="${cx<150?C.sage:C.plum}"/>`)}})});add(s9,`<text x="86" y="140" text-anchor="middle" font-family="Hanken Grotesk" font-size="11" fill="#53556A">Diputados</text><text x="240" y="140" text-anchor="middle" font-family="Hanken Grotesk" font-size="11" fill="#53556A">Senado</text>`);
  const s10=document.getElementById('f10');let px='';EE.forEach((v,i)=>{const x=24+i*11.2,y=128-v/160*104;px+=(i?'L':'M')+x+' '+y;add(s10,`<circle cx="${x}" cy="${y}" r="2.6" fill="${C.ochre}"/>`)});add(s10,`<path d="${px}" fill="none" stroke="${C.ochre}" stroke-width="1.5"/><line x1="20" x2="310" y1="130" y2="130" stroke="#C9C5BB"/>`);
  const s11=document.getElementById('f11');for(let i=0;i<50;i++)add(s11,`<rect x="${48+(i%10)*23}" y="${18+Math.floor(i/10)*23}" width="17" height="17" rx="3" fill="${C.blue}" opacity=".85"/>`);add(s11,`<text x="48" y="140" font-family="Hanken Grotesk" font-size="11" fill="#53556A">cada cuadro, un decreto</text>`);
- const s12=document.getElementById('f12');[['Zero-shot',.60,C.soft],['LLM local',.93,C.plum],['BETO ajustado',.93,C.sage]].forEach(([n,v,c],i)=>{add(s12,`<text x="20" y="${40+i*38}" font-family="Hanken Grotesk" font-size="12" fill="#53556A">${n}</text><rect x="118" y="${28+i*38}" width="${v*165}" height="18" rx="2" fill="${c}"/><text x="${124+v*165}" y="${41+i*38}" font-family="Hanken Grotesk" font-size="12" font-weight="600" fill="#24252D">${String(v.toFixed(2)).replace('.',',')}</text>`)});
  document.querySelectorAll('.meter').forEach(m=>{for(let i=0;i<5;i++)add(m,`<i style="${i<+m.dataset.v?'background:var(--blue)':''}"></i>`)});
 })();
 
