@@ -7,7 +7,7 @@
 <meta name="description" content="Politóloga de la PUCP. Trabajo con archivos y datos, y los convierto en indicadores sobre el Perú.">
 <meta property="og:title" content="Ximena Pinillos Zegarra">
 <meta property="og:description" content="Politóloga de la PUCP. Trabajo con archivos y datos, y los convierto en indicadores sobre el Perú.">
-<meta property="og:image" content="https://ximenapize.github.io/Resume/assets/img/foto.jpg">
+<meta property="og:image" content="https://ximenapize.github.io/assets/img/foto.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cg fill='%2333507A'%3E%3Ccircle cx='5' cy='21' r='3'/%3E%3Ccircle cx='13' cy='21' r='3'/%3E%3Ccircle cx='21' cy='21' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3Ccircle cx='21' cy='13' r='3'/%3E%3Ccircle cx='21' cy='5' r='3'/%3E%3C/g%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -17,6 +17,7 @@
   --grid:rgba(51,80,122,.06);
 }
 *{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
 body{color:var(--ink);font:17px/1.6 "Hanken Grotesk",system-ui,sans-serif;background-color:var(--bg);
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .28 0 0 0 0 .22 0 0 0 .085 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"),
@@ -55,22 +56,21 @@ h1 em{font-style:italic;color:var(--blue)}
 .portrait svg{position:absolute;inset:-26px;width:332px;height:332px}
 
 /* menú */
-.menu{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 30px;padding:20px 0 18px;margin-top:8px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-.mb{position:relative;background:none;border:0;padding:6px 2px 10px;cursor:pointer;font:400 22px/1.2 "Libre Caslon Text",serif;color:var(--ink-2);transition:color .2s,transform .12s}
+.menu{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:4px 28px;padding:14px 0 12px;margin-top:8px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);
+  background:rgba(252,251,248,.9);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.mb{position:relative;flex:none;text-decoration:none;padding:6px 2px 10px;font:400 21px/1.2 "Libre Caslon Text",serif;color:var(--ink-2);transition:color .2s}
 .mb::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:8px;border-radius:4px;background:var(--ochre);opacity:0;transform:scaleX(.3);transition:opacity .2s,transform .25s;z-index:-1}
 .mb:hover{color:var(--ink)}
 .mb:hover::after{opacity:.25;transform:scaleX(1)}
-.mb:active{transform:translateY(2px)}
-.mb[aria-expanded="true"]{color:var(--ink);font-style:italic}
-.mb[aria-expanded="true"]::after{opacity:.55;transform:scaleX(1)}
+.mb[aria-current="true"]{color:var(--ink);font-style:italic}
+.mb[aria-current="true"]::after{opacity:.55;transform:scaleX(1)}
 .mb:focus-visible{outline:3px solid var(--ochre);outline-offset:3px;border-radius:4px}
 
 /* paneles */
-.panel{display:none;margin-top:22px;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:34px 36px 36px;box-shadow:0 22px 50px -40px rgba(36,37,45,.5)}
-.panel.open{display:block;animation:in .35s cubic-bezier(.2,.7,.2,1)}
+.panel{display:block;scroll-margin-top:76px;padding:72px 0 8px}
+.panel+.panel{border-top:1px solid var(--rule);margin-top:56px}
 @keyframes in{from{opacity:0;transform:translateY(-8px)}}
 .ph{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
-.close{font:600 14px "Hanken Grotesk";background:none;border:0;color:var(--mute);cursor:pointer;min-height:44px}
 
 /* 1 */
 .process{border:1px solid var(--rule);border-radius:8px;padding:22px 24px 16px;background:#FDFCF9}
@@ -205,8 +205,8 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
   .portrait,.portrait img{width:140px;height:140px}.portrait svg{inset:-14px;width:168px;height:168px}.portrait{order:-1;margin-left:14px;margin-top:14px}
   .hero p{font-size:18px}
   .btn{padding:0 14px 0 11px;font-size:14.5px}
-  .menu{gap:0 22px;justify-content:flex-start}.mb{font-size:21px}
-  .panel{padding:22px 18px 24px;border-radius:8px}
+  .menu{justify-content:flex-start;gap:0 20px;overflow-x:auto;scrollbar-width:none;margin:8px -16px 0;padding:10px 16px 8px}.menu::-webkit-scrollbar{display:none}.mb{font-size:19px}
+  .panel{padding:48px 0 4px;scroll-margin-top:60px}.panel+.panel{margin-top:40px}
   .process{overflow-x:auto}.process svg{min-width:620px}.process .cap{grid-template-columns:1fr;gap:8px}
   .grid,.social{grid-template-columns:1fr}
   .reel{grid-template-columns:1fr}.reel video{width:100%;max-width:260px}
@@ -214,7 +214,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
   .pub{grid-template-columns:84px 1fr}.cover{width:84px;height:114px;font-size:10.5px}
   h2{font-size:26px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -240,7 +240,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 1 -->
 <section class="panel" id="soy">
-  <div class="ph"><h2>Sobre mí</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Sobre mí</h2></div>
   <p class="lead">Me interesa cómo participan las personas en la política y en la sociedad, y cómo el Ejecutivo y el Congreso responden a esa participación.</p>
   <div class="themes">
     <div class="theme"><h3>Participación política</h3><p>Quiénes postulan, quiénes llegan a los cargos y cuántas mujeres lo logran.</p><ul class="tags"><li>Representación</li><li>Partidos</li><li>Paridad de género</li></ul></div>
@@ -263,13 +263,10 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 2 -->
 <section class="panel" id="trabajo">
-  <div class="ph"><h2>Trabajo</h2><button class="close" type="button">Cerrar</button></div>
-  <div class="tabs" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" data-tab="t-egpp">EGPP-PUCP</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="t-antes">Experiencias anteriores</button>
-  </div>
+  <div class="ph"><h2>Trabajo</h2></div>
+
   <div class="tp" id="t-egpp">
-    <div class="org">
+    <div class="org" style="margin-top:22px">
       <div class="logo">EGPP</div>
       <div><h3>Escuela de Gobierno y Políticas Públicas, PUCP</h3><p>Diciembre de 2024 – hoy. Lima.</p></div>
     </div>
@@ -302,7 +299,8 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
   </div>
 
   </div>
-  <div class="tp" id="t-antes" hidden>
+  <div class="tp" id="t-antes">
+    <h3 class="sec">Experiencias anteriores</h3>
     <ul class="tl">
       <li><span class="d">Abr 2024</span><div><h3>Encuestadora <span>· Consultora Equilibrium</span></h3><p>Encuestas a población migrante venezolana para la Encuesta Anual Conjunta de Necesidades de la plataforma R4V.</p></div></li>
       <li><span class="d">Abr – Ago 2023</span><div><h3>Asistente de investigación <span>· Instituto de Estudios Internacionales, PUCP</span></h3><p>Búsqueda, revisión y sistematización de fuentes para el libro <i>Las amenazas a la seguridad del Perú en el siglo XXI</i>.</p></div></li>
@@ -317,7 +315,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 4 -->
 <section class="panel" id="estudios">
-  <div class="ph"><h2>Formación</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Formación</h2></div>
   <ul class="tl">
     <li><span class="d">2026 – 2027</span><div><h3>Diplomatura en Ciencia de Datos para las Ciencias Sociales y la Gestión Pública <span>· Q-Lab PUCP</span></h3><span class="badge">En curso, con media beca</span></div></li>
     <li><span class="d">2019 – 2025</span><div><h3>Ciencia Política y Gobierno <span>· PUCP</span></h3><p>Décimo superior durante toda la carrera.</p><span class="badge">Tercer puesto de la promoción</span></div></li>
@@ -334,7 +332,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 5 -->
 <section class="panel" id="publicaciones">
-  <div class="ph"><h2>Publicaciones</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Publicaciones</h2></div>
   <div class="pubs" style="margin-top:18px">
     <div class="pub">
       <div class="cover" style="background:#33507A"><span>La normalización de la excepción</span><svg viewBox="0 0 100 40" id="cov"></svg></div>
@@ -355,7 +353,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 6 -->
 <section class="panel" id="portafolio">
-  <div class="ph"><h2>Portafolio</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Portafolio</h2></div>
   <p class="lead">Bases de datos, tableros y herramientas que construí o en los que participé. Cada ficha dice qué pregunta responde y qué hice yo.</p>
   <div class="reel">
     <video controls preload="none" playsinline poster="assets/img/reel-portada.jpg" src="https://ximenapize.github.io/python-qlab/tarea_3/reel/reel.mp4" aria-label="Reel: cómo responde el Estado a la protesta"></video>
@@ -367,7 +365,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 7 -->
 <section class="panel" id="stack">
-  <div class="ph"><h2>Stack</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Stack</h2></div>
   <p class="lead">Con qué trabajo. Los puntos marcan cuánto lo uso en el día a día.</p>
   <div class="stack">
     <div class="st"><h3><i style="background:var(--blue)"></i>Python</h3><p>pandas y geopandas; scraping con Selenium, Playwright, BeautifulSoup y trafilatura; OCR con PaddleOCR; transcripción con faster-whisper; tableros en Streamlit.</p><div class="meter" data-v="4"></div></div>
@@ -380,7 +378,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 8 -->
 <section class="panel" id="redes">
-  <div class="ph"><h2>Redes</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Redes</h2></div>
   <p class="lead">Lo que escucho, lo que veo y dónde encontrarme.</p>
   <div class="social">
     <div class="so soon"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="#1DB954"/><path d="M9 13c6-2 12-1.5 17 1M10 18c5-1.5 10-1 14 1M11 22.5c4-1 8-.7 11 .8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span><b>Spotify</b><small>Pronto</small></span></div>
@@ -393,7 +391,7 @@ footer{margin-top:56px;color:var(--mute);font-size:14px;display:flex;justify-con
 
 <!-- 9 -->
 <section class="panel" id="juego">
-  <div class="ph"><h2>Memoria en el hemiciclo</h2><button class="close" type="button">Cerrar</button></div>
+  <div class="ph"><h2>Memoria en el hemiciclo</h2></div>
   <p class="lead">Al empezar verás todos los escaños destapados por unos segundos. Después se voltean: encuentra los 12 pares para llenar el hemiciclo. Ningún objeto representa a un partido.</p>
   <div class="board" id="board"><div class="mid"><div class="desk"></div><b id="mid">24 escaños</b><span id="sub">Pulsa «Jugar»</span></div></div>
   <div class="gbar"><span id="msg">12 pares por encontrar.</span><button id="play" type="button">Jugar</button></div>
@@ -420,14 +418,10 @@ let seed=11;const R=()=>(seed=(seed*16807)%2147483647)/2147483647;
 // menú
 const SECS=[['soy','sobre mí'],['trabajo','trabajo'],['estudios','formación'],['publicaciones','publicaciones'],['portafolio','portafolio'],['stack','stack'],['redes','redes'],['juego','juego']];
 const menu=document.getElementById('menu');
-SECS.forEach(([id,t])=>add(menu,`<button class="mb" type="button" aria-expanded="false" aria-controls="${id}" data-id="${id}">${t}</button>`));
-function openSec(id,scroll){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('open',p.id===id));
-  document.querySelectorAll('.mb').forEach(b=>b.setAttribute('aria-expanded',b.dataset.id===id));
-  if(id){history.replaceState(null,'','#'+id);if(scroll){const p=document.getElementById(id);window.scrollTo({top:p.getBoundingClientRect().top+scrollY-16,behavior:'smooth'})}}
-  else history.replaceState(null,'',location.pathname)}
-menu.addEventListener('click',e=>{const b=e.target.closest('.mb');if(!b)return;openSec(b.getAttribute('aria-expanded')==='true'?null:b.dataset.id,true)});
-document.querySelectorAll('.close').forEach(b=>b.onclick=()=>{openSec(null);window.scrollTo({top:menu.getBoundingClientRect().top+scrollY-16,behavior:'smooth'})});
-const h=location.hash.slice(1);if(SECS.some(s=>s[0]===h))openSec(h,false);
+SECS.forEach(([id,t])=>add(menu,`<a class="mb" href="#${id}" data-id="${id}">${t}</a>`));
+const links=[...menu.querySelectorAll('.mb')];
+const spy=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.setAttribute('aria-current',l.dataset.id===e.target.id));const a=menu.querySelector(`[data-id="${e.target.id}"]`);if(a&&menu.scrollWidth>menu.clientWidth)menu.scrollTo({left:a.offsetLeft-16,behavior:'smooth'})}})},{rootMargin:'-35% 0px -60% 0px'});
+document.querySelectorAll('.panel').forEach(p=>spy.observe(p));
 
 // proceso
 (function(){const s=document.getElementById('proc');
@@ -444,7 +438,6 @@ const h=location.hash.slice(1);if(SECS.some(s=>s[0]===h))openSec(h,false);
  const c=document.getElementById('cov');EE.forEach((v,i)=>{const h=v/155*34;add(c,`<rect x="${4+i*3.6}" y="${38-h}" width="2.4" height="${h}" fill="${i>=19?'#E2B866':'#C9D2E1'}"/>`)})})();
 
 // pestañas de trabajo
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===t));document.querySelectorAll('.tp').forEach(p=>p.hidden=p.id!==t.dataset.tab)});
 
 // portafolio
 const ITEMS=[
